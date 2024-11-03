@@ -1,0 +1,111 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1919;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.groupDiv {
+    height: 50px;
+    padding: 10px 20px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    background: rgb(0,140,255);
+    box-shadow: 0 0 25px rgb(0,140,255);
+    margin: 10px; /* Buttons ke beech mein gap */
+    width: 250px; /* Button ki width */
+    display: flex; /* Flex use karna text ko center karne ke liye */
+    justify-content: center; /* Text ko center mein rakhne ke liye */
+    align-items: center; /* Vertically center karne ke liye */
+}
+
+.groupDiv:hover {
+    box-shadow: 0 0 5px rgb(0,140,255),
+                0 0 25px rgb(0,140,255),
+                0 0 50px rgb(0,140,255),
+                0 0 100px rgb(0,140,255);
+}
+
+.modal-parent {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.modal-head {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal-head button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.modal-head button:hover {
+    background-color: #0056b3;
+}
+
+.modal-body {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 50px;
+}
